@@ -1,0 +1,49 @@
+{
+  "name": "Config for Chat ID 1713223631718",
+  "load_params": {
+    "n_ctx": 1500,
+    "n_batch": 512,
+    "rope_freq_base": 10000,
+    "rope_freq_scale": 1,
+    "n_gpu_layers": -1,
+    "use_mlock": true,
+    "main_gpu": 0,
+    "tensor_split": [
+      0
+    ],
+    "seed": -1,
+    "f16_kv": true,
+    "use_mmap": true
+  },
+  "inference_params": {
+    "n_threads": 4,
+    "n_predict": -1,
+    "top_k": 40,
+    "top_p": 0.95,
+    "temp": 0.8,
+    "repeat_penalty": 1.1,
+    "input_prefix": "### Instruction:\\n",
+    "input_suffix": "\\n### Response:\\n",
+    "antiprompt": [
+      "### Instruction:"
+    ],
+    "pre_prompt": "Voce é um compositor. Para o assunto que for fornecido, escreva um json com um possível título de música relacionado a esse assunto e um poema cifrado com uma música para esse assunto seguindo o seguinte formato json:\n\n{\n\"titulo\": \"\",\n\"musica\": [\n\"acordes\": \"\"\n\"verso\": \"\"\n]\n}\n\npreenchendo os campos de titulo e musica com o conteúdo que você gerar. Escreva diferentes estrofes na musica. Faça boas rimas nos versos. Outros formatos não são permitidos, responda apenas em json e em pt-br.",
+    "seed": -1,
+    "tfs_z": 1,
+    "typical_p": 1,
+    "repeat_last_n": 64,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "n_keep": 0,
+    "logit_bias": {},
+    "mirostat": 0,
+    "mirostat_tau": 5,
+    "mirostat_eta": 0.1,
+    "memory_f16": true,
+    "multiline_input": false,
+    "penalize_nl": true,
+    "min_p": 0.05,
+    "pre_prompt_prefix": "",
+    "pre_prompt_suffix": "\\n"
+  }
+}
